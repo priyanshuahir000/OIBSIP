@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <audio id="myAudio" src="mixkit-fast-double-click-on-mouse-275.wav"></audio>
+    <div class="theme-button active">
+        <button id="click"><ion-icon name="color-fill" class="theme-icon"></ion-icon></button>
+        <p>Click To Change The Theme!</p>
+    </div> 
+    
+    <div class="box background">
+        <div class="heading">
+            <h1 style="color: white;">Calculator</h1>
+        </div> 
+        <div class="calc theme-dark">
+            <div class="screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="button-operator button-clear" id="clear">C</button></td>
+                        <td><button class="button-operator" id="/">/</button></td>
+                        <td><button class="button-operator" id="*"><ion-icon name="close" ></ion-icon></button></td>
+                        <td><button class="button-operator" id="backspace"><ion-icon name="arrow-back"></ion-icon></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="7">7</button></td>
+                        <td><button class="button-number" id="8">8</button></td>
+                        <td><button class="button-number" id="9">9</button></td>
+                        <td><button class="button-operator" id="-"><ion-icon name="remove"></ion-icon></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="4">4</button></td>
+                        <td><button class="button-number" id="5">5</button></td>
+                        <td><button class="button-number" id="6">6</button></td>
+                        <td><button class="button-operator" id="+"><ion-icon name="add"></ion-icon></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="1">1</button></td>
+                        <td><button class="button-number" id="2">2</button></td>
+                        <td><button class="button-number" id="3">3</button></td>
+                        <td><button class="button-operator" id="%">%</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-operator" id=".">.</button></td>
+                        <td><button class="button-number" id="5">0</button></td>
+                        <td colspan="2"><button class="button-equal button-operator" id="equal">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
