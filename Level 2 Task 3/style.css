@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+min-height: 100vh; 
+font-family: 'Satisy', cursive;
+font-size: 130%;
+text-align: center;
+color: #494a4b;
+background-color: #99CCFF;
+box-sizing: border-box;
+}
+
+.sec-1 {
+width: 90%; 
+max-width: 500px;
+height: auto;
+min-height: 500px;
+padding: 1rem 1.5rem; 
+background: #fff;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.6),0 0 10px rgba(0, 0, 0, 0.2),0 0 5px rgba(255, 255, 255, 0.2),0 0 50px rgba(255, 255, 255, 0.2) inset,0 0 100px rgba(255, 255, 255, 0.2) inset;
+box-sizing: border-box;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+}
+
+.div1-head {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1.5rem; 
+background-color: #fff;
+border-radius: 10px; 
+box-shadow: 4px 3px 7px 2px #000 40;
+padding: 1rem; 
+width: 90%; 
+box-sizing: border-box;
+}
+
+.div1-h2 {
+font-size: 2rem; 
+font-weight: bold; 
+color: #494a4b;
+transform: rotate(2deg);
+}
+
+.div1-img {
+width: 40%; 
+margin-right: 1rem; 
+}
+
+.form__input {
+width: 80%; 
+margin-bottom: 1rem; 
+box-sizing: border-box;
+padding: 0.7rem;
+font-size: 1.3rem;
+color: rgba(63, 62, 65, 1);
+border: solid 3px transparent;
+border-bottom: dashed 3px #494a4b; 
+background-color: transparent;
+border-radius: 5px; 
+}
+
+.form__input:focus {
+outline: none;
+border-bottom: solid 3px #494a4b; 
+}
+.button {
+	padding: 0;
+	border: none;
+	transform-origin: center;
+    width: 500;
+    font-size: 20px;
+	font-family: 'Satisy', cursive;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 10px;
+    padding: 3px 15px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.button:hover {
+	background-color: #539fea21;
+}
+
+.toDoList {
+	text-align: left;
+	margin-top: 30px;
+}
+
+.toDoList li {
+	position: relative;
+	padding: 0.5rem;
+}
+
+.toDoList li:hover {
+	text-decoration: line-through wavy #1a1a1a9f;
+}
+
+@media only screen and (max-width: 480px) {
+		.sec-1 {
+		padding: 0rem; 
+		justify-content: flex-start;
+		}
+		
+		.div1-head {
+		margin-bottom: 0rem; 
+		padding: 0.3rem; 
+		width: 80%; 
+		}
+		
+		.div1-h2 {
+		font-size: 1.5rem; 
+		}
+		
+		.form__input {
+		width: 60%; 
+		margin-bottom: 0.5rem; 
+		padding: 0.7rem;
+		font-size: 0.9rem;
+		border: solid 2px transparent;
+		border-bottom: dashed 2px #494a4b; 
+		}
+		
+		.form__input:focus {
+		border-bottom: solid 2px #494a4b; 
+		}
+		.button {
+			font-size: 15px;
+			display: block;
+			margin: 0px auto;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Satisy', cursive;
+		}
+		
+		.toDoList {
+			font-size: 1.2rem;
+		}
+		
+		.toDoList li {
+			padding: 0.1rem;
+		}
+}
+
+
+
